@@ -148,7 +148,7 @@ def write_stale_apps_to_csv(apps: list) -> None:
         } for a in apps
     ]
 
-    with open(os.path.join(base_path, filename), 'w+') as f:
+    with open(os.path.join(base_path, filename), 'w+', encoding='utf-8') as f:
         writer = csv.DictWriter(f, ['name', 'id', 'size_mb', 'last_reload'], quoting=csv.QUOTE_NONNUMERIC)
         writer.writeheader()
         writer.writerows(data)
