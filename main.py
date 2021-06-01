@@ -210,7 +210,7 @@ if __name__ == '__main__':
     applications = get_app_list(servername)
 
     # parse list and filter for stale applications
-    print(f"Searching for apps that are more than {args.days} old.")
+    print(f"Searching for apps that are more than {args.days} days old.")
     stale_applications = stale_apps(applications,
                                     days_stale=args.days,
                                     min_mb=args.min,
