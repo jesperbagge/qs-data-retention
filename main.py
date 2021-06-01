@@ -13,7 +13,7 @@ import csv
 
 from websocket import create_connection
 
-base_path = os.path.dirname(os.path.abspath(__name__))
+base_path = os.path.dirname(os.path.abspath(__file__))
 cert_path = os.path.join(base_path, 'certs')
 
 ssl = {
